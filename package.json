@@ -1,5 +1,5 @@
 {
-  "name": "@moon/ui",
+  "name": "gyeomui",
   "version": "0.0.1",
   "description": "UI Library",
   "main": "dist/cjs/index.js",
@@ -11,18 +11,49 @@
   "scripts": {
     "dev": "rollup -c --watch",
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --verbose",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@chromatic-com/storybook": "^3.2.4",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "11.1.6",
+    "@storybook/addon-essentials": "^8.5.4",
+    "@storybook/addon-interactions": "^8.5.4",
+    "@storybook/addon-onboarding": "^8.5.4",
+    "@storybook/addon-webpack5-compiler-swc": "^2.0.0",
+    "@storybook/blocks": "^8.5.4",
+    "@storybook/react": "^8.5.4",
+    "@storybook/react-webpack5": "^8.5.4",
+    "@storybook/test": "^8.5.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/jest": "^29.5.14",
     "@types/react": "^19.0.8",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "postcss": "^8.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "rollup": "^4.34.6",
     "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.5.4",
     "tslib": "^2.8.1",
     "typescript": "^5.7.3"
+  },
+  "pearDependencies": {
+    "react": "^19.0.0"
   }
 }

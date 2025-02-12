@@ -1,9 +1,10 @@
-interface ButtonProps {
-  text: string;
+import React from "react"
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
-const Button = ({text , ...props}: ButtonProps) => {
-  return <button {...props}>{text}</button>
+const Button = ({ ...props}: ButtonProps) => {
+  return <button {...props}>{props.children}</button>
 }
 
 export default Button;
