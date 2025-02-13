@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
+import "../../../src/styles/globals.css"
 
 import Button from './Button';
 
@@ -22,15 +23,16 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-className: 'btn btn-primary',
+    variant: 'secondary',
 type: 'button',
-children: 'click me'
+children: 'click me',
+className: 'text-white bg-blue-500 p-4',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    className: 'btn btn-primary',
+    className: 'p-4 bg-blue-500 text-white',
     type: 'button',
     children: 'click me'
   },
@@ -39,7 +41,7 @@ export const Secondary: Story = {
 export const Large: Story = {
   args: {
     style: {backgroundColor: 'red'},
-    className: 'btn btn-primary',
+    className: '',
     type: 'button',
     children: 'click me'
   },
