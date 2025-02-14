@@ -6,7 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 function Button ({ variant = "primary"  ,...props}: ButtonProps) {
-  const badgeStyle = clsx({
+  const ButtonStyle = clsx({
     "bg-pink-60 rounded-8 text-10-500 text-gray-0 px-4 pt-1 inline-block text-nowrap w-fit":
       variant === "primary",
     "rounded-32 border-gray-100-opacity-5 text-15-700 border bg-purple-5 px-12 py-6 text-purple-50 text-nowrap":
@@ -16,7 +16,7 @@ function Button ({ variant = "primary"  ,...props}: ButtonProps) {
     "rounded-4 border-gray-100-opacity-5 text-11-500 border bg-purple-5 px-6 text-purple-50 text-nowrap":
       variant === "secondarySmallSquare",
   });
-  return <button {...props} className={badgeStyle}>{props.children}</button>
+  return <button {...props} className={ButtonStyle}>{props.children}</button>
 }
 
 export default Button;
