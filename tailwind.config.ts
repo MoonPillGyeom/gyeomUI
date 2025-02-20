@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-import colors from "./src/color";
+// import colors from "./src/constants/colors";
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const tailwindPresetPxToRem = require("tailwindcss-preset-px-to-rem");
@@ -20,7 +20,7 @@ const config: Config = {
         "screen-350": "calc(100vh - 350px)",
       },
       colors: {
-        ...colors,
+        // ...colors,
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

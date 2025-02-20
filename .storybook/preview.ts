@@ -1,4 +1,3 @@
-import "../src/styles/globals.css"; // Tailwind CSS 글로벌 스타일 적용
 import type { Preview } from "@storybook/react";
 import { fn } from '@storybook/test'; // fn 함수 임포트
 
