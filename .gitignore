@@ -1,5 +1,17 @@
-node_modules
-dist
+# node_modules 디렉토리 무시
+node_modules/
 
+# 빌드 디렉토리 무시
+dist/
+
+# yarn 관련 로그 파일 무시
 yarn-error.log
-*storybook.log
+
+# Storybook 로그 파일 무시
+storybook.log
+
+# 환경 파일들 모두 무시
+.env
+.env.local
+.env.production
+.env.test
