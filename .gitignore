@@ -3,6 +3,7 @@ node_modules/
 
 # 빌드 디렉토리 무시
 dist/
+storybook-static/
 
 # yarn 관련 로그 파일 무시
 yarn-error.log
