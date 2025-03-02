@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import Radio from './Radio'; // 위에서 작성한 Radio 컴포넌트를 불러옵니다.
-// storybook build 이후 chromatic으로 배포 테스트
+// storybook build 이후 chromatic으로 배포
 const meta = {
   title: 'Radio',
   component: Radio,
