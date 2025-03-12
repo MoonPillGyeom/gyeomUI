@@ -1,4 +1,4 @@
-import React, { ReactNode, createContext, useContext, useState } from "react";
+import { ReactNode, createContext, useContext, useState } from "react";
 
 interface RadioGroupProps {
   /** 라디오 그룹의 이름 (name 속성) */
