@@ -1,7 +1,7 @@
 import React, { ComponentProps } from "react";
 
 interface CarouselImgProps extends ComponentProps <"img"> {
-  src: string;
+  src?: string;
   alt: string;
 }
 
