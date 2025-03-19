@@ -1,5 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Carousel from "./Carousel";
+import Test from "../../assets/test.jpeg"
+import Test2 from "../../assets/test2.jpeg"
+import Test3 from "../../assets/test3.jpeg"
+import Test4 from "../../assets/test4.jpeg"
 
 const meta = {
   title: "Carousel",
@@ -13,6 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    images: ["CarouselMain", "Carousel2", "Carousel3", "Carousel4", "Carousel5"],
+    images: [`${Test}`, Test2, Test3, Test4]
   },
 };

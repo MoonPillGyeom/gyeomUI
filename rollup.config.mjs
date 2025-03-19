@@ -4,6 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
 import packageJson from './package.json' assert {type: 'json'}
+import url from '@rollup/plugin-url';
 
 export default [
   {
@@ -31,6 +32,11 @@ export default [
         sourceMap: true,
         modules: true,
         inject: { insertAt: 'top' },
+      }),
+      url({
+        include: ["**/*.svg", "**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif"],
+        limit: 10000, // 10kb 이하 이미지는 Base64로 인라인 처리
+        emitFiles: true, // 파일을 빌드 폴더에 복사
       }),
     ],
   },
