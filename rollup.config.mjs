@@ -22,6 +22,9 @@ export default [
       },
     ],
     external: ['react', 'react-dom', 'react/jsx-runtime'],
+    // treeshake: {
+    //   moduleSideEffects: false,
+    // },
     plugins: [
       resolve(),
       commonjs(),

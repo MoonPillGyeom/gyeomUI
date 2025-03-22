@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "dev": "rollup -c --watch",
-    "build": "webpack --config webpack.config.js",
+    "build": "rollup -c",
+    "build:webpack": "webpack --config webpack.config.js",
     "test": "jest --watchAll --verbose",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
