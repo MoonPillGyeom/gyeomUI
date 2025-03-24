@@ -1,10 +1,10 @@
 // not export and arrayFn
-// const TreeShakingTest = () => {
-//   const handleClickTest = () => {
-//     console.log('handleClickTest')
-//   }
-//   return <div onClick={handleClickTest}>TreeShakingTest</div>
-// }
+const TreeShakingTest = () => {
+  const handleClickTest = () => {
+    console.log('handleClickTest')
+  }
+  return <div onClick={handleClickTest}>TreeShakingTest</div>
+}
 
 // export and arrayFn
 export const TreeShakingIsExport = () => {
@@ -15,9 +15,9 @@ export const TreeShakingIsExport = () => {
 }
 
 // not export and function
-// function TreeShakeTest() {
-//   return <div>TreeShakeTest</div>
-// }
+function TreeShakeTest() {
+  return <div>TreeShakeTest</div>
+}
 
 // export and function
 export function TreeShakeIsExport() {
