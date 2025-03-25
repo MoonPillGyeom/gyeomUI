@@ -130,5 +130,3 @@ const colors = {
     negative: "#D6173A",
   },
 };
-
-export default colors;

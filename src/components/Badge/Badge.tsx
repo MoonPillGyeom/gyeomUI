@@ -1,4 +1,4 @@
-import React, { ComponentProps, ReactNode, CSSProperties } from "react";
+import { ComponentProps, ReactNode, CSSProperties } from "react";
 
 interface BadgeProps extends ComponentProps<"span"> {
   /** 뱃지의 내용을 지정합니다. */

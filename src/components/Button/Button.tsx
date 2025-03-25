@@ -1,4 +1,4 @@
-import React, { ComponentProps, ReactNode, CSSProperties } from "react";
+import { ComponentProps, ReactNode, CSSProperties } from "react";
 
 // 버튼 Props 타입 정의
 interface ButtonProps extends ComponentProps<"button"> {

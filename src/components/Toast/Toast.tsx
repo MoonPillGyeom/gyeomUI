@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 
 interface ToastProps {
   /** Toast에 들어갈 내용입니다. */

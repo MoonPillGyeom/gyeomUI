@@ -5,6 +5,7 @@ import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
 import packageJson from './package.json' assert {type: 'json'}
 import url from '@rollup/plugin-url';
+import { terser } from "rollup-plugin-terser";
 
 export default [
   {
@@ -21,7 +22,7 @@ export default [
         sourcemap: true,
       },
     ],
-    external: ['react', 'react-dom', 'react/jsx-runtime'],
+    external: ['react', 'react-dom', 'react/jsx-runtime', '@storybook/react', '@storybook/addon-essentials',],
     plugins: [
       resolve(),
       commonjs(),
@@ -38,6 +39,7 @@ export default [
         limit: 10000, // 10kb 이하 이미지는 Base64로 인라인 처리
         emitFiles: true, // 파일을 빌드 폴더에 복사
       }),
+      terser(),
     ],
   },
   {

@@ -1,4 +1,4 @@
-import React, { ComponentProps } from "react";
+import { ComponentProps } from "react";
 
 interface CarouselImgProps extends ComponentProps <"img"> {
   src?: string;
