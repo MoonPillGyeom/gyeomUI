@@ -6,8 +6,6 @@ import postcss from 'rollup-plugin-postcss';
 import packageJson from './package.json' assert {type: 'json'}
 import url from '@rollup/plugin-url';
 import { terser } from "rollup-plugin-terser";
-import ignore from 'rollup-plugin-ignore';
-
 
 export default [
   {
@@ -42,7 +40,6 @@ export default [
         emitFiles: true, // 파일을 빌드 폴더에 복사
       }),
       terser(),
-      ignore(['@storybook/react', '@storybook/addon-essentials']),
     ],
   },
   {
